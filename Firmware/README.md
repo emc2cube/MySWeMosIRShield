@@ -1,13 +1,23 @@
-MySWeMosIRShield - IR blaster shield for WeMos D1 Mini with HTTP and MySensors support
-==========
+# MySWeMosIRShield - IR blaster shield for WeMos D1 Mini
 
-
-Arduino
--------
+## ESPHome - For Home Assistant integration
 
 Included program
 
-### MySWeMosIRShield-RoboVac_TV
+### myswemosirshield.yaml
+
+Example code for ESPHome allowing an easy integration to Home Assistant.
+You will (very probably) need to modify this code with your own IR codes and definitions. See [ESPHome Remote Receiver Component](https://esphome.io/components/remote_receiver.html) and [ESPHome Remote Transmitter Component](https://esphome.io/components/remote_transmitter.html)
+This program was created to allow me to control my [WOOZOO Air Circulator Fan](https://amzn.to/4lCFlPL) and [Winix Air Purifier](https://amzn.to/4l8p315) and automate them through Home Assistant.
+
+![ESPHome](https://raw.githubusercontent.com/emc2cube/MySWeMosIRShield/master/img/esphome.png)
+
+## Arduino - with HTTP and MySensors support
+
+Included program
+
+### MySWeMosIRShield-RoboVac_TV.ino
+
 Example code implementing custom web server and MySensors support.
 You will (very probably) need to modify this code with your own IR codes and definitions.
 This program was created to allow me to control my [Eufy RoboVac 11 robotic vacuum cleaner](http://amzn.to/2pbbndL) which unfortunately by default lack of any advanced scheduling options. By default, this vacuum cleaner will start its "auto" mode every day at the same hour, but can now be scheduled to operate only certain days, at different times, or even using different modes.
@@ -21,9 +31,6 @@ It will also create a [MySensors](http://www.mysensors.org) node behaving like a
 
 ![Eufy](https://raw.githubusercontent.com/emc2cube/MySWeMosIRShield/master/img/eufy.png)
 
-
-Improving the code
-----------------
+## Improving the code
 
 If you have a great program using this hardware feel free to contact me or push a commit to add other examples.
-I have a few extra PCBs from previous iterations with some minor defects or missing features, if you have a working exemple on a breadboard I will happily send you one PCB for free to improve the code!
